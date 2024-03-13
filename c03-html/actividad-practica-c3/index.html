@@ -1,1 +1,63 @@
 <!-- https://media.minutouno.com/p/10a43491dca2e4ea89c7e5b6ee003b79/adjuntos/150/imagenes/040/069/0040069765/610x0/smart/daleeeeeeeeeeee-1jpg.jpg -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2 html</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    iframe {
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+
+    dialog {
+        width: 70%;
+        margin: 0 auto;
+    }
+</style>
+
+<body>
+    <!-- table -->
+    <!-- pop up -->
+    <!-- aspect ratio -->
+    <!-- <iframe src="https://www.youtube.com/embed/Vx3uykE-ung?si=aoKJiyFjwqBIYRw3&amp;controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
+    <!-- <iframe src="https://es.wikipedia.org/wiki/Iframe" frameborder="0"></iframe> -->
+
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, a quod! Unde aliquid iste odio odit quibusdam quidem! Recusandae repellendus, unde in id nisi quasi explicabo mollitia. Quibusdam, consequuntur pariatur.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima voluptate obcaecati est iste vel necessitatibus omnis ea neque, earum, ipsa tempora sint modi id officiis, soluta fugiat quidem adipisci eaque.</p>
+
+    <dialog>
+        <iframe src="https://www.youtube.com/embed/Vx3uykE-ung?si=pc3aqQjpa5BcyghF" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+            <!-- <button>dialog</button> -->
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores debitis odit, amet eaque alias incidunt expedita ipsum, sint ratione sequi nesciunt cum tempore mollitia. Culpa tenetur deserunt mollitia pariatur sed.</p>
+    </dialog>
+
+    <button>dialog</button>
+
+    <script>
+        const dialog = document.querySelector('dialog');
+        const button = document.querySelector('button');
+
+        button.addEventListener('click', () => {
+            // dialog.toggleAttribute('open');
+            // dialog.show();
+            dialog.showModal();
+        });
+    </script>
+</body>
+
+</html>
