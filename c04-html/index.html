@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+
+<body>
+    <!-- <form action="#" method="post" target="_blank"> -->
+    <form action="#" method="post">
+        <fieldset>
+
+            <legend>Datos personales</legend>
+
+            <div class="form-control">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" autofocus required>
+            </div>
+
+            <div class="form-control">
+                <label for="surname">Apellido</label>
+                <input type="text" name="surname" id="surname">       
+            </div>
+
+            <div class="form-control">
+                <label for="dni">dni</label>
+                <input type="number" name="dni" id="dni" placeholder="Ej: 12345678">
+            </div>
+
+            <div class="form-control">
+                <label for="birthday">birthday</label>
+                <input type="date" name="birthday" id="birthday">
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Datos de usuario</legend>
+            
+            <label for="userName">
+                <input type="text" name="userName" id="userName" placeholder="Tu nombre de usuario">
+            </label>
+
+            <label for="email">
+                <input type="email" name="email" id="email" placeholder="Tu correo electrónico" required>
+            </label>
+
+            <label for="password">
+                <input type="password" name="password" id="password" placeholder="Ingresá tu clave secreta" required>
+            </label>
+
+            <fieldset>
+                <legend>Lenguajes que conoces</legend>
+                <label>
+                    <input type="checkbox" name="knowledge" value="html">
+                    HTML
+                </label>
+                <label>
+                    <input type="checkbox" name="knowledge" value="css">
+                    CSS
+                </label>
+                <label>
+                    <input type="checkbox" name="knowledge" value="js">
+                    javaScript
+                </label>
+                <label>
+                    <input type="checkbox" name="knowledge" value="node">
+                    Node js
+                </label>
+                <label>
+                    <input type="checkbox" name="knowledge" value="react">
+                    React js
+                </label>
+                <label>
+                    <input type="checkbox" name="knowledge" value="mongodb">
+                    Mongo DB
+                </label>             
+            </fieldset>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de envío</legend>
+
+            <label for="preference">
+                Cuándo quisieras la entrega?
+                <select name="preference" id="preference">
+                    <option value="mañana">Mañana</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noche">Noche</option>
+                </select>
+            </label>
+
+        </fieldset>
+
+        <input type="submit" value="Enviar ahora">
+    </form>
+</body>
+
+</html>
