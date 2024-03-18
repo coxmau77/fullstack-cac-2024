@@ -1,0 +1,41 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+    accent-color: #2872FA;
+    --system-ui: system-ui, serif;
+    --txt-size: medium;
+    --h-color: rgb(54, 56, 76);
+    --txt-color: rgb(74, 77, 101);
+    --bg-color: rgb(253, 252, 252);
+    --bg-input-clr: rgb(255, 255, 255);
+    --border-clr: rgba(74, 77, 101, 0.300);
+}
+
+*, ::after, ::before {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    transition: 0.3s ease-out;    
+}
+
+html, input, button {
+    font-family: var(--system-ui);
+    font-size: var(--txt-size);
+    color: var(--txt-color);
+}
+
+form input {
+    /* opacity: 1; */
+    background-color: var(--bg-input-clr);
+    all: unset;
+    border: 1px solid var(--border-clr);
+}
+
+body {
+    background-color: var(--bg-color);
+    text-wrap: balance;
+}
+
+h1,h2,h3,h4 {
+    color: var(--h-color);
+}
