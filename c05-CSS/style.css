@@ -24,7 +24,7 @@ html, input, button {
     color: var(--txt-color);
 }
 
-form input {
+form input textarea{
     /* opacity: 1; */
     background-color: var(--bg-input-clr);
     all: unset;
