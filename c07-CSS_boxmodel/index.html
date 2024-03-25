@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model - CSS</title>
+</head>
+
+<!-- Llevar style a un documento independiente -->
+<style>
+    .overflow-box {
+
+        width: 200px;
+        height: 200px;
+        text-wrap: balance;
+        background-color: tomato;
+        /* Overflow 4 opciones */
+        /* overflow: visible; */
+        /* overflow: hidden; */
+        /* overflow: clip; */
+        /* overflow: scroll; */
+        overflow: auto;
+    }
+
+    .margin-padding-border {
+        background-color: aliceblue;
+        margin: 2rem;
+        padding: 1rem;
+        /* border: 10px inset rgb(255, 0, 0); */
+        border: 1px groove blue;
+
+        .box-a {
+            width: 200px;
+            height: 200px;
+            background-color: violet;
+            margin: 1rem;
+            /* border: 1px solid rgb(102, 2, 102); */
+
+            > h2 {
+                background-color: white;
+            }
+        }
+
+        .box-b {
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            margin: .5rem;
+            padding: 2rem;
+
+            > h2 {
+                background-color: white;
+            }
+        }
+    }
+
+    .display {
+        background-color: yellowgreen;
+        /* display: none; */
+        display: block;
+        /* visibility: visible; */
+        /* visibility: hidden; */
+    }
+
+    .position {
+        background-color: lightblue;
+        padding: 1rem;
+
+        .box {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+        
+        .box-1 {
+            background-color: tomato;
+            position: relative;
+            left: 50px;
+            /* bottom: 50px; */
+            top: 50px;
+        }
+        .box-2 {
+            background-color: rebeccapurple;
+            position: absolute;
+            /* left: 100px; */
+            right: 100px;
+            bottom: 50px;
+        }
+        .box-3 {
+            background-color: royalblue;
+            position: sticky;
+            /* top: 0px; */
+        }
+    }
+
+
+</style>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+
+        <div class="position">
+            <div class="box box-1"></div>
+            <div class="box box-2"></div>
+            <div class="box box-3"></div>
+        </div>
+        
+        <hr>
+
+        <div class="display">
+            <h2>Visivility Y Display</h2>
+        </div>
+
+        <hr>
+
+        <div class="margin-padding-border">
+            <h2>margin padding border</h2>
+            <div class="box-a"><h2>box a</h2></div>
+            <div class="box-b"><h2>box b</h2></div>
+        </div>
+
+        <div>
+            <h2>Overflow</h2>
+            <div class="overflow-box">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cumque fugiat ut magni velit doloremque vel blanditiis numquam cum culpa? Culpa perspiciatis aperiam ipsum aliquam excepturi iusto autem sequi nulla!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cumque fugiat ut magni velit doloremque vel blanditiis numquam cum culpa? Culpa perspiciatis aperiam ipsum aliquam excepturi iusto autem sequi nulla!</p>
+            </div>
+        </div>
+
+       
+
+
+    </main>
+
+    <footer>
+        <small>Mauricio Cox - Box model | 2024</small>
+    </footer>
+</body>
+</html>
