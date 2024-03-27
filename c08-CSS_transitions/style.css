@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    /* padding: 0;
+    margin: 0; */
+}
+:root {
+    --section-h: 400px;
+}
+
+body {
+    background-color: turquoise;
+}
+
+a {
+    /* margin: 2rem auto; */
+    padding: .5rem 1rem;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 6px;
+}
+
+a:hover {
+    background-color: tomato;
+    color: white;
+    cursor: pointer;
+}
+
+a:visited {
+    color: gray
+}
+
+ul li:first-child {
+    color: red;
+}
+
+ul li:nth-child(1) {
+    background-color: white;
+}
+
+ol li:nth-child(even) {
+    background-color: lightgreen;
+}
+
+ol li:nth-child(odd) {
+    background-color: lightcoral;
+}
+
+section {
+    height: var(--section-h);
+    background-color: pink;
+    padding: 1rem;
+    margin: 1rem;
+
+    > p::first-letter {
+        color: purple;
+        font-weight: 800;
+        font-size: 2rem;
+    }
+
+    > p::first-line {
+        background-color: lightblue;
+    }
+}
+
+dl {
+    background-color: aqua;
+
+    > dd {
+        background-color: pink;
+
+    }
+
+    > dd::before {
+        content: "X";
+    }
+
+    > dd::after {
+        content: "Z";
+    }
+
+}
+
+.caja {
+    width: 100px;
+    height: 100px;
+    background-color: lightslategray;
+}
+
+.caja:hover {
+    /* transform: rotate(45deg); */
+    /* transform: scale(1.5); */
+    /* transform: translate(100px, 100px); */
+    transform: translate(-50px);
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    transition-property: width;
+    /* transition-duration: 200ms; */
+    transition-duration: 200ms;
+    transition-delay: 100ms;
+    transition-timing-function: ease-out;
+}
+
+.box:hover {
+    width: 300px;
+    border-radius: 8px;
+}
+
+/* interpolacion lineal con animations */
+
+.content {
+    width: 100px;
+    height: 100px;
+    background-color: lightsalmon;
+
+}
+
+.content:hover {
+    background-color: lightyellow;
+}
