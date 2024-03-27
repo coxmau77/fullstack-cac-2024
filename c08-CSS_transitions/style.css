@@ -114,10 +114,24 @@ dl {
 .content {
     width: 100px;
     height: 100px;
-    background-color: lightsalmon;
 
+    animation-name: test;
+    animation-duration: 3s;
+    /* animation-iteration-count: 2; */
+    animation-iteration-count: infinite;
 }
 
-.content:hover {
-    background-color: lightyellow;
+@keyframes test {
+    /* from {
+        background-color: pink;
+    } to {        
+        background-color: tomato;
+    } */
+    0% {
+        background-color: pink;
+    } 50% {        
+        background-color: tomato;
+    } 100% {
+        background-color: blueviolet;
+    }
 }
