@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    :root {
+        --box-size: 80px;
+        --box-bg-clr: pink;
+        --box-border-clr: hotpink;
+    }
+
+    .container {
+        background-color: aliceblue;
+        height: 350px;
+        border: 2px solid rgb(35, 189, 206);
+
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        /* justify-content: space-around; */
+        /* flex-direction: row-reverse; */
+        /* align-content: flex-end; */
+        align-content: center;
+        gap: .5rem;
+    }
+    .item {
+        width: var(--box-size);
+        height: var(--box-size);
+        background-color: var(--box-bg-clr);
+        border: 2px solid var(--box-border-clr);
+
+        display: grid;
+        place-content: center;
+    }
+  </style>
+
+  <body>
+    <!-- Flex container -->
+    <div class="container">
+      <!-- Flex items -->
+      <div class="item">first</div>
+      <div class="item">X</div>
+      <div class="item">X</div>
+      <div class="item">X</div>
+      <div class="item">middle</div>
+      <div class="item">X</div>
+      <div class="item">X</div>
+      <div class="item">X</div>
+      <div class="item">last</div>
+    </div>
+  </body>
+</html>
